@@ -4,8 +4,14 @@ document.getElementById("temperature").style.display="block";
 document.getElementById("card").style.display="flex";
 
 const app=document.querySelector("#text");
-const titlle=document.getElementById("searching");
+let titlle=document.getElementById("searching");
 const change=document.getElementById("title");
+let check=titlle.value.trim().length; 
+if (check==0) {
+    console.log("0");
+    alert("please enter a city");
+}
+else{
 let a=titlle.value;
     const url = `https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${a}`;
 const options = {
@@ -26,6 +32,7 @@ try {
 
 } catch (error) {
 	console.error(error);
+}
 }
 }
 let app=document.querySelector("#go");
