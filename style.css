@@ -1,0 +1,23 @@
+#city{
+    display: none;
+    color: white;
+
+}
+#temperature{
+    display: none;
+    color: white;
+}
+.heading{
+    text-align: center;
+    margin: 4rem 0px;
+}
+#card{
+    display: none;
+    margin-top: 5rem;
+    text-align: center;
+    justify-content: center;
+}
+.secton{
+    display: flex;
+    justify-content: center;
+}
